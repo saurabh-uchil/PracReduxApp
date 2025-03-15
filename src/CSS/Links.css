@@ -1,0 +1,10 @@
+a{
+    text-decoration: none !important;
+    color: #f7f7f7 !important;
+    margin: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+a:hover{
+    border-bottom: 2px solid white;
+}

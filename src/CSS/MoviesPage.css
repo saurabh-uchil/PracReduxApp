@@ -1,0 +1,35 @@
+.MoviesPage{
+    padding:100px;
+  }
+
+  h2{
+    text-align: center;
+    margin: 10px;
+  }
+
+  form{
+    padding: 50px;
+    border: 2px solid grey;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  label{
+    margin-block: 20px;
+  }
+  
+  .btn{
+    margin-block: 30px;
+  }
+  
+  .moviesDiv{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    border: 2px solid grey;
+    flex-wrap: wrap;
+  }
+  .moviesDiv >* {
+    margin: 15px;
+  }

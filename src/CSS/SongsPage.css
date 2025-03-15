@@ -1,0 +1,55 @@
+.SongsPage{
+    padding:100px
+  }
+
+  h2{
+    text-align: center;
+    margin-bottom: 30px !important;
+  }
+  form{
+    padding: 50px;
+    border: 2px solid grey;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  label{
+    margin-block: 20px;
+  }
+  
+  .btn{
+    margin-block: 30px;
+  }
+  
+  .songsDiv{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    border: 2px solid grey;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .songsDiv >* {
+    margin: 15px;
+  }
+
+  @media only screen and (max-width:767px){
+    .SongsPage{
+      padding: 20px;
+    }
+    form{
+      padding: 20px;
+      width: 100% !important;
+    }
+    .songsDiv{
+      flex-direction: column;
+      margin-inline: 0px;
+      margin-block: 10px;
+    }
+    .songsDiv >*{
+      width: 100% !important;
+      margin-inline: 0px;
+      margin-block: 10px ;
+    }
+  }
