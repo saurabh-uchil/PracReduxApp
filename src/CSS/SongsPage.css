@@ -34,6 +34,7 @@
     margin: 15px;
   }
 
+
   @media only screen and (max-width:767px){
     .SongsPage{
       padding: 20px;
@@ -46,6 +47,7 @@
       flex-direction: column;
       margin-inline: 0px;
       margin-block: 10px;
+      width: 100%;
     }
     .songsDiv >*{
       width: 100% !important;

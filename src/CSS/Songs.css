@@ -2,3 +2,9 @@
     width: 100px;
     margin-inline: 10px;
 }
+
+@media screen and (max-width:767px) {
+    .songCard >*{
+        width: 100% !important;
+    }
+}

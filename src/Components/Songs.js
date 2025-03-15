@@ -108,7 +108,7 @@ export default function Songs({song, deleteSong, editSong}) {
     }
 
     return (
-        <div>
+        <div className="songCard">
             {!song.isEditable && <div className="card" style={{width: "18rem"}}>
                 <div className="card-body">
                     <h5 className="card-title">Song: {song.song}</h5>

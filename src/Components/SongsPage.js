@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { addSongs, setSong, setArtist, setSongMovie, setSongYear, removeSongs, editSongs } from '../store';
+import { addSongs, setSong, setArtist, setSongMovie, setSongYear, removeSongs, editSongs, resetSong } from '../store';
 import Songs from '../Components/Songs';
 import "../CSS/SongsPage.css";
 
@@ -49,16 +49,17 @@ export default function SongsPage() {
       }
     
       const handleSongs = (e) =>{
-        console.log("Clicled on add");
-        console.log("Songs Text: "+songText);
+        //console.log("Clicled on add");
+        //console.log("Songs Text: "+songText);
         e.preventDefault();
         const song = addSongs({id:Math.floor(Math.random()*500), song:songText, artist:artistText, movie:movieText, year:yearText, isEditable:false});
-        console.log(song);
+        //console.log(song);
         dispatch(song);
-        dispatch(setSong(""))
-        dispatch(setArtist(""));
+         
+        dispatch(resetSong(""));
+        /* dispatch(setArtist(""));
         dispatch(setSongMovie(""));
-        dispatch(setSongYear(""));
+        dispatch(setSongYear("")); */
       }
       
       const deleteSong = (id) =>{
