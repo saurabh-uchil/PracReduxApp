@@ -14,3 +14,14 @@ Delete: Remove items from the list.
 4. JavaScript (ES6+): Scripting language used for logic.
 5. CSS: Styling for the components (or use your preferred CSS framework).
 6. Bootstrap: Frontend framework for responsive, mobile-first design.
+
+# Screenshots
+Add Song
+![Image](https://github.com/user-attachments/assets/f08a1ec2-6308-495a-9a5a-00c01407bb6d)
+
+Edit Song
+![Image](https://github.com/user-attachments/assets/1518577a-e806-420d-ab21-b5e32074bdb2)
+
+Mobile
+
+![Image](https://github.com/user-attachments/assets/0cca6914-0f00-4827-9afa-fc2fd504c3fc)
