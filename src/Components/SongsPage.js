@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { addSongs, setSong, setArtist, setSongMovie, setSongYear, removeSongs, editSongs, resetSong } from '../store';
+import { addSongs, setSong, setArtist, setSongMovie, setSongYear, removeSongs, editSongs, reset } from '../store';
 import Songs from '../Components/Songs';
 import "../CSS/SongsPage.css";
 
@@ -56,7 +56,7 @@ export default function SongsPage() {
         //console.log(song);
         dispatch(song);
          
-        dispatch(resetSong(""));
+        dispatch(reset(""));
         /* dispatch(setArtist(""));
         dispatch(setSongMovie(""));
         dispatch(setSongYear("")); */

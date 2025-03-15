@@ -1,7 +1,7 @@
-import { configureStore, createSlice } from "@reduxjs/toolkit";
+import { configureStore, createAction, createSlice } from "@reduxjs/toolkit";
 
 
-
+export const reset = createAction("app/reset");
 // eslint-disable-next-line no-unused-vars
 const songsSlice = createSlice({
     name:"songs",
@@ -48,10 +48,15 @@ const songValueSlice = createSlice({
     reducers:{
         setSong(state,action){
             return action.payload;
-        },
+        }/* ,
         resetSong(state, action){
             return action.payload;
-        }
+        } */
+    },
+    extraReducers(builder){
+        builder.addCase(reset, (state,action)=>{
+            return action.payload;
+        })
     }
 });
 
@@ -65,7 +70,7 @@ const artistSlice = createSlice({
         }
     },
     extraReducers(builder){
-        builder.addCase("songtext/resetSong", (state, action)=>{
+        builder.addCase(reset, (state, action)=>{
             return action.payload
         });
     }
@@ -82,7 +87,7 @@ const songMovieSlice = createSlice({
         },
     },
     extraReducers(builder){
-        builder.addCase("songtext/resetSong", (state, action)=>{
+        builder.addCase(reset, (state, action)=>{
             console.log("called extra reducers");
             
             return action.payload
@@ -101,7 +106,7 @@ const yearSlice = createSlice({
         }
     },
     extraReducers(builder){
-        builder.addCase("songtext/resetSong", (state, action)=>{
+        builder.addCase(reset, (state, action)=>{
             return action.payload
         });
     }
@@ -159,7 +164,7 @@ const store = configureStore({
 
 export {store}
 export const {addSongs, removeSongs, editSongs, updateSongs} = songsSlice.actions;
-export const {setSong, resetSong} = songValueSlice.actions;
+export const {setSong} = songValueSlice.actions;
 export const {setArtist} = artistSlice.actions;
 export const {setSongMovie} = songMovieSlice.actions;
 export const {setSongYear} = yearSlice.actions;
