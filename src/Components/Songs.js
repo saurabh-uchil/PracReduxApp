@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import { useDispatch, useSelector } from "react-redux";
-import { updateSongs, updateSong, updateArtist, updateMovie, updateYear} from '../store';
+import { updateSongs, updateSong, updateArtist, updateMovie, updateYear} from '../store/index';
 
 import "../CSS/Songs.css"
 import { useState } from "react";
@@ -82,7 +82,7 @@ export default function Songs({song, deleteSong, editSong}) {
         } 
 
         if(isYearEdited){
-           yearText = editedSong.song;
+           yearText = editedSong.year;
         } 
     }
 

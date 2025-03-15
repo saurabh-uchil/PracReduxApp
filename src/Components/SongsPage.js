@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { addSongs, setSong, setArtist, setSongMovie, setSongYear, removeSongs, editSongs, reset } from '../store';
+import { addSongs, setSong, setArtist, setSongMovie, setSongYear, removeSongs, editSongs, reset } from '../store/index';
 import Songs from '../Components/Songs';
 import "../CSS/SongsPage.css";
 
